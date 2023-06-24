@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv"
 import cors from "cors"
 import colors from "colors"
-import routerAcces from "../routes/auth/login.js";
+import routerAcces from "../routes/auth/auth.js";
 import routerCreate from "../routes/auth/register.js"
 import connectionDB from "../config/connection.js";
 
