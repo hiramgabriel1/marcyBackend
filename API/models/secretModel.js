@@ -21,6 +21,7 @@ const createPostSecret = new mongoose.Schema({
   },
 });
 
+createPostSecret.index({ title: "text" });
 const secretPost = new model("secretModel", createPostSecret);
 
 export default secretPost;
