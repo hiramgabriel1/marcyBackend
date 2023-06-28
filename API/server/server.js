@@ -8,6 +8,7 @@ import routerCreate from "../routes/auth/register.js"
 import routerSecret from "../routes/secret/secrets.js"
 import routerPost from "../routes/users/posts.js";
 import routerFile from "../routes/files/files.routes.js";
+import routerNetworks from "../routes/users/networks-people/networks.js";
 
 dotenv.config()
 connectionDB()
@@ -25,6 +26,7 @@ app.use(routerCreate) // TODO create user
 app.use(routerSecret) // TODO secret posts
 app.use(routerPost) // TODO posts
 app.use(routerFile) // TODO files 
+app.use(routerNetworks) // TODO share social networks
 
 // & listening on PORT 3000
 app.listen(PORT)
